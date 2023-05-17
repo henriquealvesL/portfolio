@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 import { Container, Logo, NavBurger, NavItem, NavLinks } from "./styles";
 import menu from "@/assets/icons/menu.svg";
@@ -18,22 +18,48 @@ export function Navbar() {
     setIsNavbarOpen(false);
   };
 
+  const scrollConfig = {
+    duration: 100, // duração da animação em milissegundos
+    smooth: true, // rolagem suave ativada
+    offset: -100, // compensação do deslocamento em relação ao topo da seção
+  };
+
   return (
     <Container>
-      <Logo href="#">{"<HenriqueAlves/>"}</Logo>
+      <Logo href="init">{"<HenriqueAlves/>"}</Logo>
       <NavLinks isOpen={isNavbarOpen}>
         <NavItem>
-          <Link href="#" onClick={handleCloseMenu} className="nav-link">
+          <Link
+            to="init"
+            onClick={handleCloseMenu}
+            className="nav-link"
+            {...scrollConfig}
+          >
             {"<Home/>"}
           </Link>
         </NavItem>
         <NavItem>
-          <Link href="#" onClick={handleCloseMenu} className="nav-link">
+          <Link
+            to="about"
+            onClick={handleCloseMenu}
+            className="nav-link"
+            {...scrollConfig}
+          >
             {"<Sobre/>"}
           </Link>
         </NavItem>
         <NavItem>
-          <Link href="#" onClick={handleCloseMenu} className="nav-link">
+          <Link
+            to="techs"
+            onClick={handleCloseMenu}
+            className="nav-link"
+            {...scrollConfig}
+          >
+            {"<Tecnologias/>"}
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link to="portfolio" onClick={handleCloseMenu} className="nav-link">
             {"<Portfólio/>"}
           </Link>
         </NavItem>

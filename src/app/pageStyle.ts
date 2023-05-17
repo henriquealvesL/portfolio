@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Element } from "react-scroll";
 
 export const Container = styled.div`
   width: 100%;
@@ -31,7 +32,7 @@ export const ImageDiv = styled.div`
   }
 `;
 
-export const DescriptionContainer = styled.div`
+export const DescriptionContainer = styled(Element)`
   margin: 32px 0;
   border-bottom: 1px solid #282c34;
   display: flex;
@@ -46,7 +47,7 @@ export const DescriptionContainer = styled.div`
 
 `;
 
-export const Subtitle = styled.h2`
+export const Subtitle = styled(Element)`
   font-size: 40px;
   text-align: center;
   margin-top: 32px;
@@ -72,6 +73,10 @@ export const AboutText = styled.p`
   font-size: 24px;
   text-align: justify;
 
+  & + &{
+    margin-top: 16px;
+  }
+
   @media (max-width: 768px) {
     width: 300px;
     font-size: 16px;
@@ -88,6 +93,13 @@ export const AboutTechs = styled.div`
 
   img{
     margin: 0 8px;
+  }
+
+  @media (max-width: 768px) {
+    img{
+    height: 40px;
+    width: 40px;
+  }
   }
 `
 

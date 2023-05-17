@@ -25,8 +25,8 @@ export default function Home() {
       <Header>
         <Navbar />
       </Header>
-      <main>
-        <DescriptionContainer>
+      <main style={{ marginTop: "80px" }}>
+        <DescriptionContainer name="init">
           <WritingEffect textValue="Olá! Eu sou o Henrique e sou desenvolvedor full-stack!" />
           <ImageDiv>
             <Image
@@ -38,16 +38,33 @@ export default function Home() {
             />
           </ImageDiv>
         </DescriptionContainer>
-        <Subtitle>Sobre mim</Subtitle>
+        <Subtitle name="about">Sobre mim</Subtitle>
         <AboutContainer>
           <AboutText>
-            Profissional formando em Ciência da Computação e, além da faculdade,
-            foco meus estudos em cursos online para me aprofundar cada vez mais
-            na minha área. Atuo como Desenvolvedor Web na área do Front-End,
-            utilizando das tecnologias JavaScript, TypeScript, React, NextJS,
-            NodeJS, etc.
+            Sou um desenvolvedor Full Stack com conhecimento e experiência nas
+            seguintes tecnologias: JavaScript, TypeScript, React, NextJS e
+            NodeJS. Tenho desenvolvido projetos nos quais pude aplicar essas
+            tecnologias de forma prática e eficiente.
           </AboutText>
-          <Subtitle>Tecnologias</Subtitle>
+          <AboutText>
+            No Front-End, sou especializado no desenvolvimento de interfaces
+            utilizando JavaScript e TypeScript. Utilizo frameworks como React e
+            NextJS para criar aplicações modernas e escaláveis, proporcionando
+            uma ótima experiência do usuário.
+          </AboutText>
+          <AboutText>
+            No Back-End, trabalho com NodeJS para construir APIs eficientes,
+            utilizando as melhores práticas de desenvolvimento e arquitetura.
+            Tenho experiência na criação de servidores, integração com bancos de
+            dados e implementação de lógica de negócios.
+          </AboutText>
+          <AboutText>
+            Se você está em busca de um desenvolvedor Full Stack versátil,
+            comprometido e apaixonado por tecnologia, estou pronto para
+            enfrentar novos desafios e colaborar em projetos inovadores. Vamos
+            juntos construir soluções incríveis!
+          </AboutText>
+          <Subtitle name="techs">Tecnologias</Subtitle>
           <AboutTechs>
             <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
@@ -82,7 +99,7 @@ export default function Home() {
           </AboutTechs>
         </AboutContainer>
 
-        <Subtitle>Portfólio</Subtitle>
+        <Subtitle name="portfolio">Portfólio</Subtitle>
         <PortfolioContainer></PortfolioContainer>
       </main>
     </Container>

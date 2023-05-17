@@ -9,6 +9,12 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 16px;
+  background-color: #212121;
+  border-bottom: 1px solid #282c34;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 `;
 
 export const Logo = styled.a`
@@ -49,6 +55,7 @@ export const NavItem = styled.li`
     text-decoration: none;
     font-size: 24px;
     color: #bfb664;
+    cursor: pointer;
 
     &:hover {
       text-decoration: underline;
