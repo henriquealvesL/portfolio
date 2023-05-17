@@ -46,7 +46,7 @@ export const DescriptionContainer = styled.div`
 
 `;
 
-export const AboutTitle = styled.h2`
+export const Subtitle = styled.h2`
   font-size: 40px;
   text-align: center;
   margin-top: 32px;
@@ -55,9 +55,12 @@ export const AboutTitle = styled.h2`
 
 export const AboutContainer = styled.div`
   display: flex;
-  margin-top: 16px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
+  border-bottom: 1px solid #282c34;
+  padding: 32px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -77,5 +80,16 @@ export const AboutText = styled.p`
 `
 
 export const AboutTechs = styled.div`
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 
+  img{
+    margin: 0 8px;
+  }
 `
+
+export const PortfolioContainer = styled.div``
+
