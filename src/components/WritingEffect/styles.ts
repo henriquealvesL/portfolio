@@ -6,16 +6,19 @@ const blinkTextCursor = keyframes`
 `;
 
 export const Container = styled.div`
-  margin: 0 auto;
-  margin-top: 16px;
+  margin-left: 25%;
   color: #BFB664;
-  text-align: center;
+  width: 250px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 
   span{
-    font-size: 80px;
+    font-size: 48px;
 
     @media (max-width: 768px) {
-    font-size: 32px; 
+    font-size: 32px;
   }
   }
 `;

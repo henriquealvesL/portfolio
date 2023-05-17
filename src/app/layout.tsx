@@ -1,4 +1,6 @@
-import { Providers } from "./providers";
+import StyledComponentsRegistry from "../../lib/registry";
+
+import { Providers } from "../components/Providers/providers";
 import { VT323 } from "next/font/google";
 
 const vt323 = VT323({
@@ -18,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className={vt323.className}>
-      <Providers>{children}</Providers>
+      <body suppressHydrationWarning={true}>
+        <StyledComponentsRegistry>
+          <Providers>{children}</Providers>
+        </StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
