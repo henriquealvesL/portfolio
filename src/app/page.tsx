@@ -4,6 +4,13 @@ import Image from "next/image";
 
 import { Navbar } from "@/components/Navbar";
 import { WritingEffect } from "@/components/WritingEffect";
+import {
+  JavascriptPlainIcon,
+  TypescriptPlainIcon,
+  ReactOriginalIcon,
+  NextjsOriginalWordmarkIcon,
+  NodejsOriginalWordmarkIcon,
+} from "react-devicons";
 
 import me from "../assets/images/me.jpg";
 
@@ -18,6 +25,8 @@ import {
   ImageDiv,
   PortfolioContainer,
 } from "./pageStyle";
+
+import PortfolioProjects from "@/components/PortfolioProjects";
 
 export default function Home() {
   return (
@@ -66,41 +75,18 @@ export default function Home() {
           </AboutText>
           <Subtitle name="techs">Tecnologias</Subtitle>
           <AboutTechs>
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-              width={60}
-              height={60}
-              alt="JavaScript logo"
-            ></Image>
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-              width={60}
-              height={60}
-              alt="TypeScript logo"
-            ></Image>
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              width={60}
-              height={60}
-              alt="React logo"
-            ></Image>
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
-              width={60}
-              height={60}
-              alt="NextJS logo"
-            ></Image>
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-              width={60}
-              height={60}
-              alt="NodeJS  logo"
-            ></Image>
+            <JavascriptPlainIcon size="60px" />
+            <TypescriptPlainIcon size="60px" />
+            <ReactOriginalIcon size="60px" />
+            <NextjsOriginalWordmarkIcon size="60px" color="white" />
+            <NodejsOriginalWordmarkIcon size="60px" />
           </AboutTechs>
         </AboutContainer>
 
         <Subtitle name="portfolio">Portfólio</Subtitle>
-        <PortfolioContainer></PortfolioContainer>
+        <PortfolioContainer>
+          <PortfolioProjects />
+        </PortfolioContainer>
       </main>
     </Container>
   );

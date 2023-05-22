@@ -26,7 +26,11 @@ export function Navbar() {
 
   return (
     <Container>
-      <Logo href="init">{"<HenriqueAlves/>"}</Logo>
+      <Logo>
+        <Link to="init" {...scrollConfig}>
+          {"<HenriqueAlves/>"}
+        </Link>
+      </Logo>
       <NavLinks isOpen={isNavbarOpen}>
         <NavItem>
           <Link

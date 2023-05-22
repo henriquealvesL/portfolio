@@ -17,11 +17,12 @@ export const Container = styled.nav`
   width: 100%;
 `;
 
-export const Logo = styled.a`
+export const Logo = styled.div`
   font-size: 32px;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 `;
 
 export const NavLinks = styled.ul<MenuProps>`

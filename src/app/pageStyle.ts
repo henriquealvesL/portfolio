@@ -103,5 +103,23 @@ export const AboutTechs = styled.div`
   }
 `
 
-export const PortfolioContainer = styled.div``
+export const PortfolioContainer = styled.div`
+  margin:32px 0 32px;
+  display: flex;
+  flex-direction: column;
 
+  .second-project{
+    flex-direction: row-reverse;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img{
+        width: 400px;
+        height: 184px;
+      }
+    }
+  }
+`
