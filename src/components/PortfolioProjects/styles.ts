@@ -75,7 +75,7 @@ gap: 8px;
     border: 1px solid #282c34;
     border-radius: 8px;
     padding: 8px;
-    color: #FFF;
+    color: #bfb664;
 
     a:first-child{
       margin-right: 8px;

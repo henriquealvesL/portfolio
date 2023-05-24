@@ -56,14 +56,14 @@ export default function PortfolioProjects() {
               href="https://github.com/Samborka/MyContacts_frontend"
               target="_blank"
             >
-              <GithubOriginalIcon size="32px" color="white" />
+              <GithubOriginalIcon size="32px" color="#bfb664" />
               <span>Frontend code</span>
             </Link>
             <Link
               href="https://github.com/Samborka/MyContacts_api"
               target="_blank"
             >
-              <GithubOriginalIcon size="32px" color="white" />
+              <GithubOriginalIcon size="32px" color="#bfb664" />
               <span>API code</span>
             </Link>
           </ProjectLinksContainer>
@@ -92,7 +92,7 @@ export default function PortfolioProjects() {
           </div>
           <ProjectLinksContainer>
             <Link href="https://github.com/Samborka/Ignews" target="_blank">
-              <GithubOriginalIcon size="32px" color="white" />
+              <GithubOriginalIcon size="32px" color="#bfb664" />
               <span>Code</span>
             </Link>
           </ProjectLinksContainer>
@@ -121,7 +121,7 @@ export default function PortfolioProjects() {
               href="https://github.com/Samborka/dtmoney-rocketseat"
               target="_blank"
             >
-              <GithubOriginalIcon size="32px" color="white" />
+              <GithubOriginalIcon size="32px" color="#bfb664" />
               <span>Code</span>
             </Link>
           </ProjectLinksContainer>

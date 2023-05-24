@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <Container>
       <span>
-        Desenvolvidor por{" "}
+        Desenvolvido por{" "}
         <Link href="" target="_blank">
           Henrique.
         </Link>

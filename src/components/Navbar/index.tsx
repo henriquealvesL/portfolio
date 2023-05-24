@@ -67,6 +67,11 @@ export function Navbar() {
             {"<Portfólio/>"}
           </Link>
         </NavItem>
+        <NavItem>
+          <Link to="contact" onClick={handleCloseMenu} className="nav-link">
+            {"<Contato/>"}
+          </Link>
+        </NavItem>
       </NavLinks>
       <NavBurger onClick={handleToggleNavbar}>
         <Image

@@ -107,6 +107,7 @@ export const PortfolioContainer = styled.div`
   margin:32px 0 32px;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #282c34;
 
   .second-project{
     flex-direction: row-reverse;
@@ -121,5 +122,60 @@ export const PortfolioContainer = styled.div`
         height: 184px;
       }
     }
+  }
+`
+
+export const ContactContainer = styled.div`
+  margin: 32px 0 32px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  a{
+    text-decoration: none;
+    transition: transform 0.3s ease;
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
+export const ContactMethod = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+  gap: 8px;
+
+  span{
+    font-size: 24px;
+    color: #fff;
+  }
+
+  small{
+    font-size: 16px;
+    color: #828282;
+  }
+`
+
+export const ContactIcon = styled.div`
+  border-radius: 50%;
+  background-color: #282c34;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+
+  img{
+    width: 20px;
+    height: 20px;
   }
 `

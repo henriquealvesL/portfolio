@@ -10,9 +10,12 @@ import {
   ReactOriginalIcon,
   NextjsOriginalWordmarkIcon,
   NodejsOriginalWordmarkIcon,
+  GithubOriginalIcon,
 } from "react-devicons";
 
 import me from "../assets/images/me.jpg";
+import linkedin from "../assets/icons/linkedin.svg";
+import mail from "../assets/icons/mail.svg";
 
 import {
   AboutContainer,
@@ -24,10 +27,14 @@ import {
   Header,
   ImageDiv,
   PortfolioContainer,
+  ContactContainer,
+  ContactMethod,
+  ContactIcon,
 } from "./pageStyle";
 
 import PortfolioProjects from "@/components/PortfolioProjects";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -88,6 +95,41 @@ export default function Home() {
         <PortfolioContainer>
           <PortfolioProjects />
         </PortfolioContainer>
+
+        <Subtitle name="contact">Contato</Subtitle>
+
+        <ContactContainer>
+          <Link href="" target="_blank">
+            <ContactMethod>
+              <ContactIcon>
+                <Image src={mail} alt="mail icon" />
+              </ContactIcon>
+              <span>E-mail</span>
+              <small>henriqueadlima@hotmail.com</small>
+            </ContactMethod>
+          </Link>
+          <Link href="https://github.com/Samborka" target="_blank">
+            <ContactMethod>
+              <ContactIcon>
+                <GithubOriginalIcon size="40px" color="#bfb664" />
+              </ContactIcon>
+              <span>Github</span>
+              <small>@samborka</small>
+            </ContactMethod>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/henriquealves10/"
+            target="_blank"
+          >
+            <ContactMethod>
+              <ContactIcon>
+                <Image src={linkedin} alt="linkedin icon" />
+              </ContactIcon>
+              <span>LinkedIn</span>
+              <small>henriquealves10</small>
+            </ContactMethod>
+          </Link>
+        </ContactContainer>
       </main>
       <Footer />
     </Container>
