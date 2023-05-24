@@ -27,6 +27,7 @@ import {
 } from "./pageStyle";
 
 import PortfolioProjects from "@/components/PortfolioProjects";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -88,6 +89,7 @@ export default function Home() {
           <PortfolioProjects />
         </PortfolioContainer>
       </main>
+      <Footer />
     </Container>
   );
 }
