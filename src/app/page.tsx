@@ -99,7 +99,7 @@ export default function Home() {
         <Subtitle name="contact">Contato</Subtitle>
 
         <ContactContainer>
-          <Link href="" target="_blank">
+          <Link href="mailto:henriqueadlima@hotmail.com" target="_blank">
             <ContactMethod>
               <ContactIcon>
                 <Image src={mail} alt="mail icon" />
