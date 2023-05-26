@@ -63,8 +63,8 @@ export function Navbar() {
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="portfolio" onClick={handleCloseMenu} className="nav-link">
-            {"<Portfólio/>"}
+          <Link to="projects" onClick={handleCloseMenu} className="nav-link">
+            {"<Projetos/>"}
           </Link>
         </NavItem>
         <NavItem>

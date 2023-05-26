@@ -103,28 +103,6 @@ export const AboutTechs = styled.div`
   }
 `
 
-export const PortfolioContainer = styled.div`
-  margin:32px 0 32px;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #282c34;
-
-  .second-project{
-    flex-direction: row-reverse;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      img{
-        width: 400px;
-        height: 184px;
-      }
-    }
-  }
-`
-
 export const ContactContainer = styled.div`
   margin: 32px 0 32px;
   display: flex;

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
@@ -16,6 +17,7 @@
     "eslint-config-next": "13.4.1",
     "next": "13.4.1",
     "react": "18.2.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-devicons": "^2.14.0",
     "react-dom": "18.2.0",
     "react-scroll": "^1.8.9",

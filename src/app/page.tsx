@@ -26,7 +26,6 @@ import {
   DescriptionContainer,
   Header,
   ImageDiv,
-  PortfolioContainer,
   ContactContainer,
   ContactMethod,
   ContactIcon,
@@ -81,6 +80,7 @@ export default function Home() {
             enfrentar novos desafios e colaborar em projetos inovadores. Vamos
             juntos construir soluções incríveis!
           </AboutText>
+
           <Subtitle name="techs">Tecnologias</Subtitle>
           <AboutTechs>
             <JavascriptPlainIcon size="60px" />
@@ -91,10 +91,8 @@ export default function Home() {
           </AboutTechs>
         </AboutContainer>
 
-        <Subtitle name="portfolio">Portfólio</Subtitle>
-        <PortfolioContainer>
-          <PortfolioProjects />
-        </PortfolioContainer>
+        <Subtitle name="projects">Projetos</Subtitle>
+        <PortfolioProjects />
 
         <Subtitle name="contact">Contato</Subtitle>
 

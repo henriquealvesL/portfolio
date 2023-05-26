@@ -1,4 +1,26 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
+
+export const Container = styled.div`
+  margin:32px 0 32px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #282c34;
+
+  .second-project{
+    flex-direction: row-reverse;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img{
+        width: 400px;
+        height: 184px;
+      }
+    }
+  }
+`
 
 export const PortfolioProject = styled.div`
   display: flex;
@@ -6,6 +28,7 @@ export const PortfolioProject = styled.div`
   align-items: flex-start;
   gap : 16px;
   padding: 16px;
+  overflow-x: hidden;
 
   & + &{
     margin-top: 16px;
