@@ -9,8 +9,9 @@ const vt323 = VT323({
 });
 
 export const metadata = {
-  title: "Henrique Alves",
-  description: "Henrique Alves' personal website",
+  title: "Portfólio | Henrique Alves",
+  description:
+    "Desenvolvedor Full-Stack  com experiências em JavaScript, TypeScript, React, Next.js, Node.js, PostgreSQL e APIs Rest",
 };
 
 export default function RootLayout({

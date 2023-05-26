@@ -7,7 +7,7 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
+const Fade = require("react-reveal/Fade");
 
 import {
   JavascriptPlainIcon,
@@ -29,7 +29,7 @@ export default function PortfolioProjects() {
   return (
     <Container>
       <PortfolioProject>
-        <Fade direction="left">
+        <Fade left>
           <Image
             src={myContacts}
             alt="MyContacts project"
@@ -37,7 +37,7 @@ export default function PortfolioProjects() {
             height={315}
           />
         </Fade>
-        <Fade direction="right">
+        <Fade right>
           <ProjectDescription>
             <h3>MyContacts</h3>
             <p>
@@ -77,10 +77,10 @@ export default function PortfolioProjects() {
       </PortfolioProject>
 
       <PortfolioProject className="second-project">
-        <Fade direction="right">
+        <Fade right>
           <Image src={ignews} alt="Ignews project" width={500} height={315} />
         </Fade>
-        <Fade direction="left">
+        <Fade left>
           <ProjectDescription>
             <h3>Ignews</h3>
             <p>
@@ -110,11 +110,11 @@ export default function PortfolioProjects() {
       </PortfolioProject>
 
       <PortfolioProject>
-        <Fade direction="left">
+        <Fade left>
           <Image src={dtmoney} alt="DTMoney project" width={500} height={315} />
         </Fade>
 
-        <Fade direction="right">
+        <Fade right>
           <ProjectDescription>
             <h3>DTMoney</h3>
             <p>
