@@ -24,6 +24,7 @@ import ignews from "../../assets/images/ignews.png";
 import dtmoney from "../../assets/images/dtmoney.png";
 import prismic from "../../assets/icons/prismic.svg";
 import fauna from "../../assets/icons/fauna.svg";
+import site from "../../assets/icons/site.svg";
 
 export default function PortfolioProjects() {
   return (
@@ -131,6 +132,13 @@ export default function PortfolioProjects() {
               <TypescriptPlainIcon size="40px" />
             </div>
             <ProjectLinksContainer>
+              <Link
+                href="https://dtmoney-rocketseat-taupe.vercel.app/"
+                target="_blank"
+              >
+                <Image src={site} alt="Site Logo" width={30} height={30} />
+                <span>Dtmoney</span>
+              </Link>
               <Link
                 href="https://github.com/Samborka/dtmoney-rocketseat"
                 target="_blank"
