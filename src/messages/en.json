@@ -1,0 +1,19 @@
+{
+  "home": {
+    "hello": "Hello! I'm Henrique and I'm a full-stack developer!",
+    "home": "Home",
+    "about": "About",
+    "technologies": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact",
+    "aboutMe": "About me",
+    "aboutTextOne": "I'm a Full Stack developer with knowledge and experience in the following technologies: JavaScript, TypeScript, React, NextJS and NodeJS. I have developed projects in which I could apply these technologies in a practical and efficient way.",
+    "aboutTextTwo": "In Front-End, I specialize in the development of interfaces using JavaScript and TypeScript. I use frameworks like React and NextJS to create modern and scalable applications, providing a great user experience.",
+    "aboutTextThree": "On the Back-End, I work with NodeJS to build efficient APIs, using the best development practices and architecture. I have experience building servers, integrating with databases and implementing business logic.",
+    "aboutTextFour": "If you are looking for a versatile Full Stack developer, committed and passionate about technology, I am ready to face new challenges and collaborate on innovative projects. Let's build amazing solutions together!",
+    "myContactsDescription": "The system developed in React and Node is an application that allows users to create, edit and remove contacts. Using the React library for the frontend and the Node.js runtime environment for the backend, the application provides an interactive interface for managing contact information such as name, phone number, and email address. Users can add new contacts, update existing information and remove unwanted contacts.",
+    "ignewsDescription": "The ig.news project is a blog that offers exclusive content to users based on subscription status. Users can access full blog posts after making payment and activating their subscription through the integrated system with STRIPE. Those who choose not to subscribe will have limited access to the content of the posts. All information needed to verify signatures and user data is stored in the FaunaDB database.",
+    "dtmoneyDescription": "The financial management platform built with React and TypeScript offers an efficient solution to control your finances. With it, you can add new balances, register your expenses and have complete control of your cash flow. The intuitive and user-friendly interface makes the experience of managing your finances simple and uncluttered, allowing you to make informed decisions about your spending and savings.",
+    "footerMessage": "Developed by"
+  }
+}

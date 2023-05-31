@@ -48,10 +48,45 @@ export const NavLinks = styled.ul<MenuProps>`
     }
   }
 }
+
+@media  screen and (min-width: 768px) and (max-width: 1024px) {
+  background: #212121;
+  border: 1px solid #282c34;
+  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+
+  .nav-link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 `;
 
 export const NavItem = styled.li`
   margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bfb664;
+
+  transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+      text-decoration: underline;
+    }
+
+  button{
+    background-color: transparent;
+    border: none;
+  }
 
   .nav-link {
     text-decoration: none;
@@ -59,11 +94,11 @@ export const NavItem = styled.li`
     color: #bfb664;
     cursor: pointer;
 
-    &:hover {
-      text-decoration: underline;
+    @media screen and (max-width: 768px) {
+      display: block;
     }
 
-    @media screen and (max-width: 768px) {
+    @media  screen and (min-width: 768px) and (max-width: 1024px) {
       display: block;
     }
   }
@@ -75,6 +110,10 @@ export const NavBurger = styled.button`
   border: none;
 
   @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  @media  screen and (min-width: 768px) and (max-width: 1024px) {
     display: block;
   }
 `;

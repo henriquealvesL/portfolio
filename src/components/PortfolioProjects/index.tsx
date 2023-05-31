@@ -25,8 +25,11 @@ import dtmoney from "../../assets/images/dtmoney.png";
 import prismic from "../../assets/icons/prismic.svg";
 import fauna from "../../assets/icons/fauna.svg";
 import site from "../../assets/icons/site.svg";
+import { useTranslations } from "next-intl";
 
 export default function PortfolioProjects() {
+  const t = useTranslations("home");
+
   return (
     <Container>
       <PortfolioProject>
@@ -41,16 +44,7 @@ export default function PortfolioProjects() {
         <Fade right>
           <ProjectDescription>
             <h3>MyContacts</h3>
-            <p>
-              O sistema desenvolvido em React e Node é uma aplicação que permite
-              aos usuários criar, editar e remover contatos. Utilizando a
-              biblioteca React para o frontend e o ambiente de tempo de execução
-              Node.js para o backend, a aplicação oferece uma interface
-              interativa para gerenciar informações de contatos, como nome,
-              número de telefone e endereço de e-mail. Os usuários podem
-              adicionar novos contatos, atualizar informações existentes e
-              remover contatos indesejados.
-            </p>
+            <p>{t("myContactsDescription")}</p>
             <div className="used-techs">
               <ReactOriginalIcon size="40px" />
               <JavascriptPlainIcon size="40px" />
@@ -84,16 +78,7 @@ export default function PortfolioProjects() {
         <Fade left>
           <ProjectDescription>
             <h3>Ignews</h3>
-            <p>
-              O projeto ig.news é um blog que oferece conteúdo exclusivo aos
-              usuários com base no status de assinatura. Os usuários podem
-              acessar as postagens completas do blog após realizar o pagamento e
-              ativar sua assinatura por meio do sistema integrado com o STRIPE.
-              Aqueles que optarem por não assinar terão acesso limitado ao
-              conteúdo das postagens. Todas as informações necessárias para
-              verificar assinaturas e dados dos usuários são armazenadas no
-              banco de dados FaunaDB.
-            </p>
+            <p>{t("ignewsDescription")}</p>
             <div className="used-techs">
               <NextjsOriginalWordmarkIcon size="50px" color="white" />
               <TypescriptPlainIcon size="40px" />
@@ -118,15 +103,7 @@ export default function PortfolioProjects() {
         <Fade right>
           <ProjectDescription>
             <h3>DTMoney</h3>
-            <p>
-              A plataforma de gerenciamento financeiro desenvolvida com React e
-              TypeScript oferece uma solução eficiente para controlar suas
-              finanças. Com ela, você pode adicionar novos saldos, registrar
-              suas despesas e ter um controle completo do seu fluxo de caixa. A
-              interface intuitiva e amigável torna a experiência de gerenciar
-              suas finanças simples e organizada, permitindo que você tome
-              decisões informadas sobre seus gastos e economias.
-            </p>
+            <p>{t("dtmoneyDescription")}</p>
             <div className="used-techs">
               <ReactOriginalIcon size="40px" />
               <TypescriptPlainIcon size="40px" />

@@ -1,14 +1,21 @@
 "use client";
 
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as LinkScroll } from "react-scroll";
+import Link from "next-intl/link";
 
 import { Container, Logo, NavBurger, NavItem, NavLinks } from "./styles";
+
 import menu from "@/assets/icons/menu.svg";
+import brazil from "@/assets/icons/br.svg";
+import usa from "@/assets/icons/usa.svg";
+
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const t = useTranslations("home");
 
   const handleToggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
@@ -27,49 +34,67 @@ export function Navbar() {
   return (
     <Container>
       <Logo>
-        <Link to="init" {...scrollConfig}>
+        <LinkScroll to="init" {...scrollConfig}>
           {"<HenriqueAlves/>"}
-        </Link>
+        </LinkScroll>
       </Logo>
       <NavLinks isOpen={isNavbarOpen}>
         <NavItem>
-          <Link
+          <LinkScroll
             to="init"
             onClick={handleCloseMenu}
             className="nav-link"
             {...scrollConfig}
           >
-            {"<Home/>"}
-          </Link>
+            {`<${t("home")}/>`}
+          </LinkScroll>
         </NavItem>
         <NavItem>
-          <Link
+          <LinkScroll
             to="about"
             onClick={handleCloseMenu}
             className="nav-link"
             {...scrollConfig}
           >
-            {"<Sobre/>"}
-          </Link>
+            {`<${t("about")}/>`}
+          </LinkScroll>
         </NavItem>
         <NavItem>
-          <Link
+          <LinkScroll
             to="techs"
             onClick={handleCloseMenu}
             className="nav-link"
             {...scrollConfig}
           >
-            {"<Tecnologias/>"}
+            {`<${t("technologies")}/>`}
+          </LinkScroll>
+        </NavItem>
+        <NavItem>
+          <LinkScroll
+            to="projects"
+            onClick={handleCloseMenu}
+            className="nav-link"
+          >
+            {`<${t("projects")}/>`}
+          </LinkScroll>
+        </NavItem>
+        <NavItem>
+          <LinkScroll
+            to="contact"
+            onClick={handleCloseMenu}
+            className="nav-link"
+          >
+            {`<${t("contact")}/>`}
+          </LinkScroll>
+        </NavItem>
+        <NavItem>
+          <Link href="/" locale="pt">
+            <Image src={brazil} alt="Brazil Flag" width={40} height={40} />
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="projects" onClick={handleCloseMenu} className="nav-link">
-            {"<Projetos/>"}
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link to="contact" onClick={handleCloseMenu} className="nav-link">
-            {"<Contato/>"}
+          <Link href="/" locale="en">
+            <Image src={usa} alt="United States Flag" width={40} height={40} />
           </Link>
         </NavItem>
       </NavLinks>
