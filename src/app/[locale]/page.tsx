@@ -57,6 +57,7 @@ export default function Home() {
               height={300}
               alt="Me"
               className="image-me"
+              priority={true}
             />
           </ImageDiv>
         </DescriptionContainer>

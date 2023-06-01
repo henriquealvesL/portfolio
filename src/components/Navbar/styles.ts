@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-interface MenuProps{
-  isOpen: boolean;
-}
-
 export const Container = styled.nav`
   display: flex;
   align-items: center;
@@ -26,7 +22,7 @@ export const Logo = styled.div`
   cursor: pointer;
 `;
 
-export const NavLinks = styled.ul<MenuProps>`
+export const NavLinks = styled.ul<{$isOpen: boolean}>`
   display: flex;
   list-style: none;
   margin-right: 32px;
@@ -34,7 +30,7 @@ export const NavLinks = styled.ul<MenuProps>`
   @media screen and (max-width: 768px) {
   background: #212121;
   border: 1px solid #282c34;
-  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
   flex-direction: column;
   padding: 8px;
   position: fixed;
@@ -52,7 +48,7 @@ export const NavLinks = styled.ul<MenuProps>`
 @media  screen and (min-width: 768px) and (max-width: 1024px) {
   background: #212121;
   border: 1px solid #282c34;
-  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
   flex-direction: row;
   justify-content: space-between;
   padding: 8px;

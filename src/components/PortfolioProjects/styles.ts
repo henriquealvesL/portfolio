@@ -83,10 +83,17 @@ export const ProjectDescription = styled.div`
 `
 
 export const ProjectLinksContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  @media (max-width: 768px) {
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
 
   a{
     display: flex;

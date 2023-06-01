@@ -38,7 +38,7 @@ export function Navbar() {
           {"<HenriqueAlves/>"}
         </LinkScroll>
       </Logo>
-      <NavLinks isOpen={isNavbarOpen}>
+      <NavLinks $isOpen={isNavbarOpen}>
         <NavItem>
           <LinkScroll
             to="init"
