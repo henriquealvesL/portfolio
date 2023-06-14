@@ -3,6 +3,8 @@ import StyledComponentsRegistry from "../../lib/registry";
 import { Providers } from "../components/Providers/providers";
 import { VT323 } from "next/font/google";
 
+import "./globals.css";
+
 const vt323 = VT323({
   weight: "400",
   subsets: ["latin"],
