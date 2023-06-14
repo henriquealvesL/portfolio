@@ -14,3 +14,25 @@ body {
 button {
   cursor: pointer;
 }
+
+/* Stylling scrollbar in Firefox */
+* {
+  scrollbar-color: #bfb664 #212121;
+  scrollbar-track-color: #212121;
+  scrollbar-width: 8px;
+}
+
+/* Stylling scrollbar in Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #212121;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #bfb664;
+  border-radius: 14px;
+}
