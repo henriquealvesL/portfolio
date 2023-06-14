@@ -1,12 +1,6 @@
 import { styled } from "styled-components";
 import { Element } from "react-scroll";
 
-export const Container = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 16px;
-`;
-
 export const Header = styled.header`
   border-bottom: 1px solid #282c34;
 `;

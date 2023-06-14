@@ -24,7 +24,6 @@ import {
   AboutTechs,
   AboutText,
   Subtitle,
-  Container,
   DescriptionContainer,
   Header,
   ImageDiv,
@@ -43,7 +42,7 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <Container>
+    <>
       <Header>
         <Navbar />
       </Header>
@@ -121,6 +120,6 @@ export default function Home() {
         </Fade>
       </main>
       <Footer />
-    </Container>
+    </>
   );
 }
