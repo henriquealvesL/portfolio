@@ -22,7 +22,6 @@ import {
   AboutTechs,
   AboutText,
   Subtitle,
-  Container,
   DescriptionContainer,
   Header,
   ImageDiv,
@@ -37,7 +36,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <Container>
+    <>
       <Header>
         <Navbar />
       </Header>
@@ -130,6 +129,6 @@ export default function Home() {
         </ContactContainer>
       </main>
       <Footer />
-    </Container>
+    </>
   );
 }
