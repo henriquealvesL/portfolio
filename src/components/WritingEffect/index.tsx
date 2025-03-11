@@ -1,5 +1,3 @@
-"use client";
-
 import { useCallback, useEffect, useState } from "react";
 import { Container, TextCursor } from "./styles";
 
@@ -19,7 +17,7 @@ export function WritingEffect({ textValue }: TextProps) {
         }, 100);
       }
     },
-    [textValue.length],
+    [textValue.length]
   );
 
   useEffect(() => {
@@ -33,3 +31,4 @@ export function WritingEffect({ textValue }: TextProps) {
     </Container>
   );
 }
+
