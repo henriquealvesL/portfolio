@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { Navbar } from "@/components/Navbar";
 import { WritingEffect } from "@/components/WritingEffect";
+import { Fade } from "react-awesome-reveal";
 import {
   JavascriptPlainIcon,
   TypescriptPlainIcon,
@@ -95,38 +96,40 @@ export default function Home() {
 
         <Subtitle name="contact">Contato</Subtitle>
 
-        <ContactContainer>
-          <Link href="mailto:henriqueadlima@hotmail.com" target="_blank">
-            <ContactMethod>
-              <ContactIcon>
-                <Image src={mail} alt="mail icon" />
-              </ContactIcon>
-              <span>E-mail</span>
-              <small>henriqueadlima@hotmail.com</small>
-            </ContactMethod>
-          </Link>
-          <Link href="https://github.com/Samborka" target="_blank">
-            <ContactMethod>
-              <ContactIcon>
-                <GithubOriginalIcon size="40px" color="#bfb664" />
-              </ContactIcon>
-              <span>Github</span>
-              <small>@samborka</small>
-            </ContactMethod>
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/henriquealves10/"
-            target="_blank"
-          >
-            <ContactMethod>
-              <ContactIcon>
-                <Image src={linkedin} alt="linkedin icon" />
-              </ContactIcon>
-              <span>LinkedIn</span>
-              <small>henriquealves10</small>
-            </ContactMethod>
-          </Link>
-        </ContactContainer>
+        <Fade direction="up" triggerOnce>
+          <ContactContainer>
+            <Link href="mailto:henriqueadlima@hotmail.com" target="_blank">
+              <ContactMethod>
+                <ContactIcon>
+                  <Image src={mail} alt="mail icon" />
+                </ContactIcon>
+                <span>E-mail</span>
+                <small>henriqueadlima@hotmail.com</small>
+              </ContactMethod>
+            </Link>
+            <Link href="https://github.com/Samborka" target="_blank">
+              <ContactMethod>
+                <ContactIcon>
+                  <GithubOriginalIcon size="40px" color="#bfb664" />
+                </ContactIcon>
+                <span>Github</span>
+                <small>@samborka</small>
+              </ContactMethod>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/henriquealves10/"
+              target="_blank"
+            >
+              <ContactMethod>
+                <ContactIcon>
+                  <Image src={linkedin} alt="linkedin icon" />
+                </ContactIcon>
+                <span>LinkedIn</span>
+                <small>henriquealves10</small>
+              </ContactMethod>
+            </Link>
+          </ContactContainer>
+        </Fade>
       </main>
       <Footer />
     </>
