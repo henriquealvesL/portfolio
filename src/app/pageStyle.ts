@@ -39,16 +39,6 @@ export const DescriptionContainer = styled(Element)`
     justify-content: center;
   }
 
-  @media  screen and (min-width: 768px) and (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    div{
-      margin: 0;
-    }
-  }
-
 `;
 
 export const Subtitle = styled(Element)`
@@ -100,7 +90,10 @@ export const AboutTechs = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 350px;
+    img{
+    height: 40px;
+    width: 40px;
+  }
   }
 `
 

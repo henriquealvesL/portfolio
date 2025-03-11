@@ -67,22 +67,6 @@ export const NavLinks = styled.ul<{$isOpen: boolean}>`
 
 export const NavItem = styled.li`
   margin-left: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #bfb664;
-
-  transition: filter 0.2s;
-
-    &:hover {
-      filter: brightness(0.8);
-      text-decoration: underline;
-    }
-
-  button{
-    background-color: transparent;
-    border: none;
-  }
 
   .nav-link {
     text-decoration: none;
@@ -90,11 +74,11 @@ export const NavItem = styled.li`
     color: #bfb664;
     cursor: pointer;
 
-    @media screen and (max-width: 768px) {
-      display: block;
+    &:hover {
+      text-decoration: underline;
     }
 
-    @media  screen and (min-width: 768px) and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       display: block;
     }
   }
@@ -106,10 +90,6 @@ export const NavBurger = styled.button`
   border: none;
 
   @media screen and (max-width: 768px) {
-    display: block;
-  }
-
-  @media  screen and (min-width: 768px) and (max-width: 1024px) {
     display: block;
   }
 `;
