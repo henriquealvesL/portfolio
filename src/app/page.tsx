@@ -5,14 +5,13 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { WritingEffect } from "@/components/WritingEffect";
 import { Fade } from "react-awesome-reveal";
-import {
-  JavascriptPlainIcon,
-  TypescriptPlainIcon,
-  ReactOriginalIcon,
-  NextjsOriginalWordmarkIcon,
-  NodejsOriginalWordmarkIcon,
-  GithubOriginalIcon,
-} from "react-devicons";
+
+import JavascriptPlainIcon from "react-devicons/javascript/plain";
+import TypescriptPlainIcon from "react-devicons/typescript/plain";
+import ReactOriginalIcon from "react-devicons/react/original";
+import NextjsOriginalWordmarkIcon from "react-devicons/nextjs/original-wordmark";
+import NodejsOriginalWordmarkIcon from "react-devicons/nodejs/original-wordmark";
+import GithubOriginalIcon from "react-devicons/github/original";
 
 import me from "../assets/images/me.jpg";
 import linkedin from "../assets/icons/linkedin.svg";

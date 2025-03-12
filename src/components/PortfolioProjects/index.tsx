@@ -5,19 +5,18 @@ import {
   ProjectLinksContainer,
 } from "./styles";
 
+import { Fade } from "react-awesome-reveal";
+
 import Link from "next/link";
 import Image from "next/image";
 
-import { Fade } from "react-awesome-reveal";
-import {
-  JavascriptPlainIcon,
-  TypescriptPlainIcon,
-  ReactOriginalIcon,
-  NextjsOriginalWordmarkIcon,
-  NodejsOriginalWordmarkIcon,
-  GithubOriginalIcon,
-  PostgresqlPlainWordmarkIcon,
-} from "react-devicons";
+import JavascriptPlainIcon from "react-devicons/javascript/plain";
+import TypescriptPlainIcon from "react-devicons/typescript/plain";
+import ReactOriginalIcon from "react-devicons/react/original";
+import NextjsOriginalWordmarkIcon from "react-devicons/nextjs/original-wordmark";
+import NodejsOriginalWordmarkIcon from "react-devicons/nodejs/original-wordmark";
+import GithubOriginalIcon from "react-devicons/github/original";
+import PostgresqlPlainWordmarkIcon from "react-devicons/postgresql/plain-wordmark";
 
 import myContacts from "../../assets/images/my-contacts.png";
 import ignews from "../../assets/images/ignews.png";
