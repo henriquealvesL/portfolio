@@ -106,13 +106,13 @@ export default function Home() {
                 <small>henriqueadlima@hotmail.com</small>
               </ContactMethod>
             </Link>
-            <Link href="https://github.com/Samborka" target="_blank">
+            <Link href="https://github.com/henriquealvesL" target="_blank">
               <ContactMethod>
                 <ContactIcon>
                   <GithubOriginalIcon size="40px" color="#bfb664" />
                 </ContactIcon>
                 <span>Github</span>
-                <small>@samborka</small>
+                <small>@henriquealvesL</small>
               </ContactMethod>
             </Link>
             <Link
