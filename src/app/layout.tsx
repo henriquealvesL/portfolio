@@ -1,13 +1,14 @@
 import StyledComponentsRegistry from "../../lib/registry";
 
 import { Providers } from "../components/Providers/providers";
-import { VT323 } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
 import "./globals.css";
 
-const vt323 = VT323({
+const jetbrains = JetBrains_Mono({
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br" className={vt323.className}>
+    <html lang="pt-br" className={jetbrains.className}>
       <body suppressHydrationWarning={true}>
         <StyledComponentsRegistry>
           <Providers>{children}</Providers>
