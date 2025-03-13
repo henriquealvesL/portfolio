@@ -13,6 +13,7 @@ body{
   background: #212121;
   font-size: 16px;
   color: #FFFF;
+  line-height: 1.5rem;
 }
 
 button{

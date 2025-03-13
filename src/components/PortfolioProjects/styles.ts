@@ -14,54 +14,61 @@ export const Container = styled.div`
       align-items: center;
       justify-content: center;
 
-      img{
-        width: 400px;
-        height: 184px;
-      }
     }
   }
 `
 
 export const PortfolioProject = styled.div`
   display: flex;
+  padding: 1rem;
   justify-content: center;
-  align-items: flex-start;
-  gap : 16px;
-  padding: 16px;
-  overflow-x: hidden;
+  gap: 3rem;
 
   & + &{
-    margin-top: 16px;
+    margin-top: 1rem;
     border-top: 1px solid #282c34;
   }
 
-  img{
+  .project-preview{
     border-radius: 8px;
+    width: 540px;
+    height: 600px;
   }
 
   @media (max-width: 768px){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 
-    img{
-        width: 400px;
-        height: 184px;
+    .project-preview{
+        padding: 0.5rem;
+        width: 320px;
+        height: 375px;
       }
   }
 `
 
 export const ProjectDescription = styled.div`
   max-width: 350px;
-  text-align: justify;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1.7rem;
 
 
   h3{
+    font-size: 1.5rem;
     margin-bottom: 8px;
     color: #bfb664;
+  }
+
+  h4{
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color:#FFFFFFCC;
+    font-weight: 400;
   }
 
   p{
@@ -82,6 +89,11 @@ export const ProjectDescription = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    gap: 0.5rem;
+  }
+
 `
 
 export const ProjectLinksContainer = styled.div`

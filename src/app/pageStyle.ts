@@ -28,7 +28,7 @@ export const DescriptionContainer = styled(Element)`
 `;
 
 export const Subtitle = styled(Element)`
-  font-size: 1.875rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 2rem;
   font-weight: normal;

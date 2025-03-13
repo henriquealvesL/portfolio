@@ -31,10 +31,9 @@ export default function PortfolioProjects() {
       <PortfolioProject>
         <Fade direction="left" triggerOnce>
           <Image
+            className="project-preview"
             src={myContacts}
             alt="MyContacts project"
-            width={500}
-            height={315}
           />
         </Fade>
         <Fade direction="right" triggerOnce>
@@ -50,6 +49,7 @@ export default function PortfolioProjects() {
               adicionar novos contatos, atualizar informações existentes e
               remover contatos indesejados.
             </p>
+            <h4>TECNOLOGIAS UTILIZADAS:</h4>
             <div className="used-techs">
               <ReactOriginalIcon size="40px" />
               <JavascriptPlainIcon size="40px" />
@@ -62,7 +62,7 @@ export default function PortfolioProjects() {
                 target="_blank"
               >
                 <GithubOriginalIcon size="32px" color="#bfb664" />
-                <span>Frontend code</span>
+                <span>Web code</span>
               </Link>
               <Link
                 href="https://github.com/Samborka/MyContacts_api"
@@ -78,7 +78,11 @@ export default function PortfolioProjects() {
 
       <PortfolioProject className="second-project">
         <Fade direction="right" triggerOnce>
-          <Image src={ignews} alt="Ignews project" width={500} height={315} />
+          <Image
+            className="project-preview"
+            src={ignews}
+            alt="Ignews project"
+          />
         </Fade>
         <Fade direction="left" triggerOnce>
           <ProjectDescription>
@@ -93,6 +97,7 @@ export default function PortfolioProjects() {
               verificar assinaturas e dados dos usuários são armazenadas no
               banco de dados FaunaDB.
             </p>
+            <h4>TECNOLOGIAS UTILIZADAS:</h4>
             <div className="used-techs">
               <NextjsOriginalWordmarkIcon size="50px" color="white" />
               <TypescriptPlainIcon size="40px" />
@@ -111,12 +116,16 @@ export default function PortfolioProjects() {
 
       <PortfolioProject>
         <Fade direction="left" triggerOnce>
-          <Image src={dtmoney} alt="DTMoney project" width={500} height={315} />
+          <Image
+            className="project-preview"
+            src={dtmoney}
+            alt="DTMoney project"
+          />
         </Fade>
 
         <Fade direction="right" triggerOnce>
           <ProjectDescription>
-            <h3>DTMoney</h3>
+            <h3>DT Money</h3>
             <p>
               A plataforma de gerenciamento financeiro desenvolvida com React e
               TypeScript oferece uma solução eficiente para controlar suas
@@ -126,6 +135,7 @@ export default function PortfolioProjects() {
               suas finanças simples e organizada, permitindo que você tome
               decisões informadas sobre seus gastos e economias.
             </p>
+            <h4>TECNOLOGIAS UTILIZADAS:</h4>
             <div className="used-techs">
               <ReactOriginalIcon size="40px" />
               <TypescriptPlainIcon size="40px" />
@@ -136,7 +146,7 @@ export default function PortfolioProjects() {
                 target="_blank"
               >
                 <Image src={site} alt="Site Logo" width={30} height={30} />
-                <span>Dtmoney</span>
+                <span>dt money</span>
               </Link>
               <Link
                 href="https://github.com/Samborka/dtmoney-rocketseat"

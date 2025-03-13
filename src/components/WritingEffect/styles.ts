@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   display: inline-block;

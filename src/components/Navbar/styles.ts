@@ -15,11 +15,15 @@ export const Container = styled.nav`
 `;
 
 export const Logo = styled.div`
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 export const NavLinks = styled.ul<{$isOpen: boolean}>`
