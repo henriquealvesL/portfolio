@@ -18,8 +18,8 @@ export const Title = styled.h1`
   margin-bottom: 1.5rem;
   display: inline-block;
 
-  @media (min-width: 768px) {
-    font-size: 3.75rem;
+  @media (max-width: 768px) {
+    font-size: 2rem;
   }
 `;
 
