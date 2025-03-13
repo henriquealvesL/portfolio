@@ -1,5 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
-import { Container, TextCursor } from "./styles";
+import {
+  HeaderContainer,
+  Title,
+  TextCursor,
+  Highlight,
+  Subtitle,
+} from "./styles";
 
 interface TextProps {
   textValue: string;
@@ -25,10 +31,13 @@ export function WritingEffect({ textValue }: TextProps) {
   }, [typeWriter, textValue]);
 
   return (
-    <Container>
-      <span>{text}</span>
-      <TextCursor />
-    </Container>
+    <HeaderContainer>
+      <Title>
+        <Highlight>{"{"}</Highlight> {text}
+        <TextCursor />
+        <Highlight>{"}"}</Highlight>
+      </Title>
+      <Subtitle>Desenvolvedor Full Stack</Subtitle>
+    </HeaderContainer>
   );
 }
-

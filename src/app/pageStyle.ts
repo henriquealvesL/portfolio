@@ -1,42 +1,28 @@
-import { styled } from "styled-components";
+import  styled, {keyframes}  from "styled-components";
 import { Element } from "react-scroll";
+
+const bounceAnimation = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+`;
 
 export const Header = styled.header`
   border-bottom: 1px solid #282c34;
 `;
 
-export const ImageDiv = styled.div`
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 25%;
-  margin-bottom: 32px;
-
-  @media (max-width: 768px) {
-    width: 200px;
-    height: 200px;
-    margin-top: 16px;
-    margin-right: 0;
-
-    .image-me{
-      width: 200px;
-      height: 200px;
-    }
-  }
-`;
-
 export const DescriptionContainer = styled(Element)`
-  margin: 32px 0;
-  border-bottom: 1px solid #282c34;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  flex-direction: column;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    justify-content: center;
+  .arrow-down {
+    animation: ${bounceAnimation} 1s infinite;
   }
 
 `;
@@ -44,7 +30,7 @@ export const DescriptionContainer = styled(Element)`
 export const Subtitle = styled(Element)`
   font-size: 1.875rem;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 2rem;
   font-weight: normal;
 `
 
@@ -53,7 +39,7 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 1rem;
   border-bottom: 1px solid #282c34;
   padding: 32px;
 

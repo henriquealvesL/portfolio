@@ -13,9 +13,9 @@ import NextjsOriginalWordmarkIcon from "react-devicons/nextjs/original-wordmark"
 import NodejsOriginalWordmarkIcon from "react-devicons/nodejs/original-wordmark";
 import GithubOriginalIcon from "react-devicons/github/original";
 
-import me from "../assets/images/me.jpg";
 import linkedin from "../assets/icons/linkedin.svg";
 import mail from "../assets/icons/mail.svg";
+import arrow_down from "../assets/icons/arrow_down.svg";
 
 import {
   AboutContainer,
@@ -24,7 +24,6 @@ import {
   Subtitle,
   DescriptionContainer,
   Header,
-  ImageDiv,
   ContactContainer,
   ContactMethod,
   ContactIcon,
@@ -40,18 +39,16 @@ export default function Home() {
       <Header>
         <Navbar />
       </Header>
-      <main style={{ marginTop: "80px" }}>
+      <main>
         <DescriptionContainer name="init">
-          <WritingEffect textValue="Olá! Eu sou o Henrique e sou desenvolvedor Full Stack!" />
-          <ImageDiv>
-            <Image
-              src={me}
-              width={300}
-              height={300}
-              alt="Me"
-              className="image-me"
-            />
-          </ImageDiv>
+          <WritingEffect textValue="Henrique Alves " />
+          <Image
+            className="arrow-down"
+            src={arrow_down}
+            alt="arrow down icon"
+            width={50}
+            height={50}
+          />
         </DescriptionContainer>
         <Subtitle name="about">Sobre mim</Subtitle>
         <AboutContainer>
