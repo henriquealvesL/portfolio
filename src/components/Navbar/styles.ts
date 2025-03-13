@@ -70,7 +70,6 @@ export const NavItem = styled.li`
 
   .nav-link {
     text-decoration: none;
-    font-size: 24px;
     color: #bfb664;
     cursor: pointer;
 
