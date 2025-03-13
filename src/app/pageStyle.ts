@@ -42,7 +42,7 @@ export const DescriptionContainer = styled(Element)`
 `;
 
 export const Subtitle = styled(Element)`
-  font-size: 40px;
+  font-size: 1.875rem;
   text-align: center;
   margin-top: 32px;
   font-weight: normal;
@@ -63,18 +63,19 @@ export const AboutContainer = styled.div`
 `
 
 export const AboutText = styled.p`
-  width: 540px;
-  font-size: 24px;
+  width: 48rem;
   text-align: justify;
 
   & + &{
     margin-top: 16px;
   }
 
+  .highlight{
+    color: #bfb664
+  }
+
   @media (max-width: 768px) {
     width: 300px;
-    font-size: 16px;
-
   }
 `
 
@@ -126,12 +127,12 @@ export const ContactMethod = styled.div`
   gap: 8px;
 
   span{
-    font-size: 24px;
+    font-size: 1rem;
     color: #fff;
   }
 
   small{
-    font-size: 16px;
+    font-size: 0.875rem;
     color: #828282;
   }
 `

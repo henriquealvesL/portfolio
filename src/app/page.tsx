@@ -42,7 +42,7 @@ export default function Home() {
       </Header>
       <main style={{ marginTop: "80px" }}>
         <DescriptionContainer name="init">
-          <WritingEffect textValue="Olá! Eu sou o Henrique e sou desenvolvedor full-stack!" />
+          <WritingEffect textValue="Olá! Eu sou o Henrique e sou desenvolvedor Full Stack!" />
           <ImageDiv>
             <Image
               src={me}
@@ -56,28 +56,54 @@ export default function Home() {
         <Subtitle name="about">Sobre mim</Subtitle>
         <AboutContainer>
           <AboutText>
-            Sou um desenvolvedor Full Stack com conhecimento e experiência nas
-            seguintes tecnologias: JavaScript, TypeScript, React, NextJS e
-            NodeJS. Tenho desenvolvido projetos nos quais pude aplicar essas
-            tecnologias de forma prática e eficiente.
+            Sou um desenvolvedor <span className="highlight">Full Stack</span>{" "}
+            apaixonado por transformar ideias em soluções tecnológicas
+            funcionais e elegantes.
           </AboutText>
           <AboutText>
-            No Front-End, sou especializado no desenvolvimento de interfaces
-            utilizando JavaScript e TypeScript. Utilizo frameworks como React e
-            NextJS para criar aplicações modernas e escaláveis, proporcionando
-            uma ótima experiência do usuário.
+            Com expertise em <span className="highlight">JavaScript</span>,{" "}
+            <span className="highlight">TypeScript</span> e{" "}
+            <span className="highlight">Python</span>, construo aplicações
+            completas que combinam robustez técnica com experiências de usuário
+            excepcionais. Minha jornada profissional me permitiu desenvolver um
+            conjunto versátil de habilidades em ambas as frentes do
+            desenvolvimento.
           </AboutText>
           <AboutText>
-            No Back-End, trabalho com NodeJS para construir APIs eficientes,
-            utilizando as melhores práticas de desenvolvimento e arquitetura.
-            Tenho experiência na criação de servidores, integração com bancos de
-            dados e implementação de lógica de negócios.
+            No <span className="highlight">Front-End</span>, desenvolvo
+            interfaces intuitivas e responsivas utilizando{" "}
+            <span className="highlight">React</span>,{" "}
+            <span className="highlight">Next.js</span> e{" "}
+            <span className="highlight">Vue.js</span>, sempre priorizando a
+            experiência do usuário e as melhores práticas de UI/UX.
           </AboutText>
           <AboutText>
-            Se você está em busca de um desenvolvedor Full Stack versátil,
-            comprometido e apaixonado por tecnologia, estou pronto para
-            enfrentar novos desafios e colaborar em projetos inovadores. Vamos
-            juntos construir soluções incríveis!
+            No <span className="highlight">Back-End</span>, trabalho com{" "}
+            <span className="highlight">Django</span>,{" "}
+            <span className="highlight">Node.js</span> e{" "}
+            <span className="highlight">PostgreSQL</span> para criar
+            arquiteturas escaláveis e eficientes. Tenho experiência comprovada
+            na implementação de APIs RESTful, microsserviços e otimização de
+            bancos de dados que sustentam aplicações de alto desempenho.
+          </AboutText>
+          <AboutText>
+            Automatizo processos com <span className="highlight">CI/CD</span>,
+            configuro ambientes Dockerizados e implemento{" "}
+            <span className="highlight">testes de integração e unidade</span>,
+            garantindo entregas contínuas com qualidade e confiabilidade.
+          </AboutText>
+          <AboutText>
+            O que me diferencia é minha capacidade de enxergar além do código.
+            Busco entender profundamente os problemas para desenvolver soluções
+            que realmente agreguem valor. Sou movido por desafios e pela
+            constante busca por otimização e aprendizado.
+          </AboutText>
+          <AboutText>
+            Estou sempre aberto a novas conexões e oportunidades de colaboração
+            em projetos inovadores.{" "}
+            <span className="highlight">
+              Vamos construir algo incrível juntos?
+            </span>
           </AboutText>
 
           <Subtitle name="techs">Tecnologias</Subtitle>

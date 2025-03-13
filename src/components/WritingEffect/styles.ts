@@ -8,17 +8,17 @@ const blinkTextCursor = keyframes`
 export const Container = styled.div`
   margin-left: 25%;
   color: #BFB664;
-  width: 250px;
+  width: 550px;
 
   @media (max-width: 768px) {
     margin-left: 0;
+    width: 350px;
   }
 
   span{
-    font-size: 48px;
+    font-size: 2rem;
 
     @media (max-width: 768px) {
-    font-size: 32px;
   }
   }
 `;

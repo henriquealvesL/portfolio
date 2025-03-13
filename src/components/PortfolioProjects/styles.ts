@@ -53,7 +53,6 @@ export const PortfolioProject = styled.div`
 
 export const ProjectDescription = styled.div`
   max-width: 350px;
-  height: 315px ;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -63,7 +62,10 @@ export const ProjectDescription = styled.div`
   h3{
     margin-bottom: 8px;
     color: #bfb664;
-    font-size: 24px;
+  }
+
+  p{
+    font-size: 0.875rem;
   }
 
   .used-techs{
