@@ -12,7 +12,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Portfólio | Henrique Alves",
+  title: "Portfolio | Henrique Alves",
   description:
     "Desenvolvedor Full-Stack  com experiências em JavaScript, TypeScript, React, Next.js, Node.js, PostgreSQL e APIs Rest",
 };
