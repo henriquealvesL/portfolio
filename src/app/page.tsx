@@ -54,8 +54,8 @@ export default function Home() {
         <AboutContainer>
           <AboutText>
             Sou um desenvolvedor <span className="highlight">Full Stack</span>{" "}
-            apaixonado por transformar ideias em soluções tecnológicas
-            funcionais e elegantes.
+            movido pela transformação de ideias em soluções tecnológicas
+            funcionais e eficientes.
           </AboutText>
           <AboutText>
             Com expertise em <span className="highlight">JavaScript</span>,{" "}
