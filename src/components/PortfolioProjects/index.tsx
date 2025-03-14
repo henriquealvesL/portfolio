@@ -58,6 +58,13 @@ export default function PortfolioProjects() {
             </div>
             <ProjectLinksContainer>
               <Link
+                href="https://mycontacts-frontend.onrender.com"
+                target="_blank"
+              >
+                <Image src={site} alt="Site Logo" width={30} height={30} />
+                <span>MyContacts</span>
+              </Link>
+              <Link
                 href="https://github.com/Samborka/MyContacts_frontend"
                 target="_blank"
               >

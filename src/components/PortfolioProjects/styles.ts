@@ -50,7 +50,7 @@ export const PortfolioProject = styled.div`
 `
 
 export const ProjectDescription = styled.div`
-  max-width: 350px;
+  max-width: 550px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -68,6 +68,7 @@ export const ProjectDescription = styled.div`
     margin-top: 0.5rem;
     font-size: 0.75rem;
     color:#FFFFFFCC;
+    text-align: center;
     font-weight: 400;
   }
 
@@ -92,6 +93,7 @@ export const ProjectDescription = styled.div`
 
   @media (max-width: 768px) {
     gap: 0.5rem;
+    width: 350px;
   }
 
 `
