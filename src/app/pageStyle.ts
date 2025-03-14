@@ -50,7 +50,7 @@ export const AboutContainer = styled.div`
 
 export const AboutText = styled.p`
   width: 48rem;
-  text-align: justify;
+  text-align: left;
 
   & + &{
     margin-top: 16px;
