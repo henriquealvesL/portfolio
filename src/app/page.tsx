@@ -12,6 +12,10 @@ import ReactOriginalIcon from "react-devicons/react/original";
 import NextjsOriginalWordmarkIcon from "react-devicons/nextjs/original-wordmark";
 import NodejsOriginalWordmarkIcon from "react-devicons/nodejs/original-wordmark";
 import GithubOriginalIcon from "react-devicons/github/original";
+import DjangoPlainWordmarkIcon from "react-devicons/django/plain-wordmark";
+import PythonOriginalIcon from "react-devicons/python/original";
+import DockerPlainWordmarkIcon from "react-devicons/docker/plain-wordmark";
+import VueIcon from "react-devicons/vuejs/original-wordmark";
 
 import linkedin from "../assets/icons/linkedin.svg";
 import mail from "../assets/icons/mail.svg";
@@ -109,7 +113,11 @@ export default function Home() {
             <TypescriptPlainIcon size="60px" />
             <ReactOriginalIcon size="60px" />
             <NextjsOriginalWordmarkIcon size="60px" color="white" />
+            <VueIcon size="60px" />
             <NodejsOriginalWordmarkIcon size="60px" />
+            <PythonOriginalIcon size="60px" />
+            <DjangoPlainWordmarkIcon size="60px" />
+            <DockerPlainWordmarkIcon size="60px" />
           </AboutTechs>
         </AboutContainer>
 

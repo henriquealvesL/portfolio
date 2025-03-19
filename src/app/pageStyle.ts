@@ -77,6 +77,7 @@ export const AboutTechs = styled.div`
   }
 
   @media (max-width: 768px) {
+    flex-wrap: wrap;
     img{
     height: 40px;
     width: 40px;
