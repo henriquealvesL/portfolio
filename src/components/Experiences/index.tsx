@@ -24,7 +24,7 @@ interface ExperienceProps {
   company: string;
   period: string;
   description: string[];
-  techs: any[];
+  techs: string[];
 }
 
 const experiences: ExperienceProps[] = [
@@ -38,15 +38,15 @@ const experiences: ExperienceProps[] = [
       "Utilizei Vue.js no front-end e Python/Django no back-end, além de trabalhar com PostgreSQL para gerenciamento de dados.",
     ],
     techs: [
-      <JavascriptPlainIcon size={40} />,
-      <TypescriptPlainIcon size={40} />,
-      <VuejsOriginalWordmarkIcon size={40} />,
-      <JQueryIcon size={40} />,
-      <PythonOriginalIcon size={40} />,
-      <DjangoPlainWordmarkIcon size={40} />,
-      <PostgresqlPlainWordmarkIcon size={40} />,
-      <GraphQLIcon size={40} />,
-      <GoIcon size={40} />,
+      "javascript",
+      "typescript",
+      "vue",
+      "jquery",
+      "python",
+      "django",
+      "postgresql",
+      "graphql",
+      "go",
     ],
   },
   {
@@ -60,15 +60,7 @@ const experiences: ExperienceProps[] = [
       "Testes de software e hardware, montagem de cenários para validação de funcionamento e resolução de problemas de clientes.",
       "Colaborei na melhoria da infraestrutura do projeto, utilizando Docker e pipelines de CI/CD para otimizar o fluxo de desenvolvimento e implantação.",
     ],
-    techs: [
-      <JavascriptPlainIcon size={40} />,
-      <PythonOriginalIcon size={40} />,
-      <PhpOriginalIcon size={40} />,
-      <CppIcon size={40} />,
-      <SQLiteIcon size={40} />,
-      <JQueryIcon size={40} />,
-      <DockerPlainWordmarkIcon size={40} />,
-    ],
+    techs: ["javascript", "python", "php", "cpp", "sqlite", "jquery", "docker"],
   },
   {
     title: "Desenvolvedor Front-end",
@@ -80,12 +72,7 @@ const experiences: ExperienceProps[] = [
       "Integrei a aplicação com o banco de dados MongoDB, garantindo a comunicação fluida entre o front-end e o back-end para o armazenamento e gerenciamento de dados das estufas.",
       "Implementei melhorias na usabilidade e design do sistema, aprimorando a experiência do usuário e facilitando a configuração dos parâmetros automatizados.",
     ],
-    techs: [
-      <JavascriptPlainIcon size={40} />,
-      <TypescriptPlainIcon size={40} />,
-      <ReactOriginalIcon size={40} />,
-      <MongoDBIcon size={40} />,
-    ],
+    techs: ["javascript", "typescript", "react", "mongo"],
   },
 ];
 
