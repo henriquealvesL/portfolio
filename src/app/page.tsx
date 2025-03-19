@@ -36,6 +36,7 @@ import {
 import PortfolioProjects from "@/components/PortfolioProjects";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Experiencia from "@/components/Experiences";
 
 export default function Home() {
   return (
@@ -120,6 +121,9 @@ export default function Home() {
             <DockerPlainWordmarkIcon size="60px" />
           </AboutTechs>
         </AboutContainer>
+
+        <Subtitle name="techs">Experiências</Subtitle>
+        <Experiencia />
 
         <Subtitle name="projects">Projetos</Subtitle>
         <PortfolioProjects />
